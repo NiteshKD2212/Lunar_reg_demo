@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LunarReg — Time for Moon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+
+
+<!-- ============================================================ -->
+<!-- HOME VIEW                                                      -->
+<!-- ============================================================ -->
+<div id="home-view" class="page">
+  <header class="site-header">
+    <div class="logo">
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="24" cy="24" r="21" fill="#E7DFD8"/>
+        <path d="M24 3a21 21 0 0 0 0 42 17 17 0 1 1 0-42Z" fill="#B7ADA4"/>
+        <circle cx="17" cy="16" r="3.2" fill="#D8CCC5"/>
+        <circle cx="30" cy="12" r="2" fill="#F2ECE6"/>
+        <circle cx="14" cy="30" r="2.4" fill="#F2ECE6"/>
+      </svg>
+      <span class="logo-text">
+        <span class="logo-name">LunarReg</span>
+        <span class="logo-tag">Time for Moon</span>
+      </span>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="star-field" aria-hidden="true"></div>
+      <div class="hero-grid">
+
+        <div class="moon-illustration" aria-hidden="true">
+          <svg class="big-moon" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="110" cy="110" r="100" fill="#DCD3C9"/>
+            <circle cx="80" cy="80" r="18" fill="#CBC0B4"/>
+            <circle cx="145" cy="70" r="10" fill="#CBC0B4"/>
+            <circle cx="140" cy="145" r="26" fill="#CBC0B4"/>
+            <circle cx="70" cy="150" r="12" fill="#CBC0B4"/>
+            <circle cx="110" cy="110" r="100" fill="none" stroke="#C7BCAF" stroke-width="1.5"/>
+            <!-- rocket standing on the moon -->
+            <g transform="translate(92 20)">
+              <path d="M18 0c10 9 13 24 10 40l-20 0c-3-16 0-31 10-40Z" fill="#3D4C7D"/>
+              <circle cx="18" cy="22" r="4.5" fill="#EFEBE9"/>
+              <path d="M9 30 -2 42l7-2 2-9Z" fill="#C08552"/>
+              <path d="M27 30 38 42l-7-2-2-9Z" fill="#C08552"/>
+              <path d="M12 40h12l-3 12h-6Z" fill="#B4592B"/>
+            </g>
+          </svg>
+          <svg class="launch-rocket" viewBox="0 0 60 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M30 4c7 8 9 18 7 30l-14 0c-2-12 0-22 7-30Z" fill="#3D4C7D"/>
+            <circle cx="30" cy="20" r="3.6" fill="#EFEBE9"/>
+            <path d="M23 30 15 38l5-1 1-7Z" fill="#C08552"/>
+            <path d="M37 30 45 38l-5-1-1-7Z" fill="#C08552"/>
+            <path d="M25 34h10l-2 9h-6Z" fill="#B4592B"/>
+            <path d="M28 44c-3 8-3 16 1 26 4-10 4-18 1-26Z" fill="#EAD7C4" opacity="0.85"/>
+          </svg>
+        </div>
+
+        <div class="hero-card">
+          <svg class="astro-flag" viewBox="0 0 130 130" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="40" cy="100" r="26" fill="#DCD3C9"/>
+            <circle cx="80" cy="108" r="12" fill="#E7DFD8"/>
+            <line x1="72" y1="30" x2="72" y2="88" stroke="#3D4C7D" stroke-width="2.5"/>
+            <path d="M72 30h24l-8 9 8 9H72Z" fill="#C08552"/>
+            <circle cx="52" cy="70" r="15" fill="#FFFFFF" stroke="#3D4C7D" stroke-width="2.5"/>
+            <circle cx="52" cy="70" r="8" fill="#3D4C7D" opacity="0.22"/>
+            <rect x="36" y="82" width="32" height="30" rx="12" fill="#FFFFFF" stroke="#3D4C7D" stroke-width="2.5"/>
+          </svg>
+
+          <span class="hero-eyebrow">Chandrayaan 2 · India in Space</span>
+          <h1>Register lunar surface imagery with precision</h1>
+          <p>Align, evaluate, and interpret orbital imagery of the Moon — from crater topology to mineral composition — in one workspace.</p>
+          <button class="cta-primary" id="start-registration">
+            Start Image Registration <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="facts">
+      <h2>Chandrayaan 2 facts</h2>
+      <p class="facts-sub">A quick look at India's second lunar exploration mission</p>
+      <div class="facts-grid">
+        <article class="fact-card">
+          <div class="fact-icon"><i class="fa-solid fa-user-astronaut"></i></div>
+          <div>
+            <h3>Launched July 2019</h3>
+            <p>Chandrayaan-2 lifted off aboard a GSLV Mk III rocket from the Satish Dhawan Space Centre.</p>
+          </div>
+        </article>
+        <article class="fact-card">
+          <div class="fact-icon"><i class="fa-solid fa-user-astronaut"></i></div>
+          <div>
+            <h3>Three-part spacecraft</h3>
+            <p>It combined an orbiter, the Vikram lander, and the Pragyan rover in a single mission.</p>
+          </div>
+        </article>
+        <article class="fact-card">
+          <div class="fact-icon"><i class="fa-solid fa-user-astronaut"></i></div>
+          <div>
+            <h3>Targeting the south pole</h3>
+            <p>The mission aimed to study a lunar region never explored before, near the Moon's south pole.</p>
+          </div>
+        </article>
+        <article class="fact-card">
+          <div class="fact-icon"><i class="fa-solid fa-user-astronaut"></i></div>
+          <div>
+            <h3>Orbiter still active</h3>
+            <p>While the lander's descent did not go as planned, the orbiter continues to map the Moon in detail.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="#">Feedback</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+    <div class="footer-links">
+      <a href="#">Settings</a>
+    </div>
+  </footer>
+</div>
+
+<!-- ============================================================ -->
+<!-- DASHBOARD VIEW                                                 -->
+<!-- ============================================================ -->
+<div id="dashboard-view" class="page hidden">
+  <header class="site-header" style="padding-bottom:0;">
+    <div class="logo">
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="24" cy="24" r="21" fill="#E7DFD8"/>
+        <path d="M24 3a21 21 0 0 0 0 42 17 17 0 1 1 0-42Z" fill="#B7ADA4"/>
+        <circle cx="17" cy="16" r="3.2" fill="#D8CCC5"/>
+        <circle cx="30" cy="12" r="2" fill="#F2ECE6"/>
+        <circle cx="14" cy="30" r="2.4" fill="#F2ECE6"/>
+      </svg>
+      <span class="logo-text">
+        <span class="logo-name">LunarReg</span>
+        <span class="logo-tag">Time for Moon</span>
+      </span>
+    </div>
+  </header>
+
+  <main>
+    <div class="dash-header">
+      <button class="back-link" id="back-home"><i class="fa-solid fa-arrow-left"></i> Back to home</button>
+      <span class="mono" style="font-size:0.78rem;color:var(--ink-soft);">MISSION: CH2 / IMAGE REGISTRATION</span>
+    </div>
+    <div class="dash-title">
+      <h1>Image registration &amp; evaluation</h1>
+      <p>Upload a fixed and moving image pair, then run registration to generate the matched output, accuracy metrics, and mineral analysis.</p>
+    </div>
+
+    <!-- Submission + Controls -->
+    <section class="panel">
+      <div class="panel-inner">
+        <span class="panel-label">IMAGE SUBMISSION &amp; CONTROLS</span>
+        <div class="submission-grid">
+          <label class="upload-box" id="fixed-box">
+            <input type="file" id="fixed-input" accept="image/*">
+            <i class="fa-solid fa-image"></i>
+            <span class="up-label">FIXED IMAGE</span>
+            <span class="up-sub">Reference orbital frame</span>
+          </label>
+
+          <label class="upload-box" id="moving-box">
+            <input type="file" id="moving-input" accept="image/*">
+            <i class="fa-solid fa-image"></i>
+            <span class="up-label">MOVING IMAGE</span>
+            <span class="up-sub">Frame to be aligned</span>
+          </label>
+
+          <div class="controls-box">
+            <div>
+              <h3>Registration controls</h3>
+              <div class="ctrl-row"><span>Algorithm</span><span>SIFT + MAGSAC</span></div>
+              <div class="ctrl-row"><span>Resolution</span><span>Full frame</span></div>
+            </div>
+            <button class="cta-secondary" id="start-matching">
+              <i class="fa-solid fa-wand-magic-sparkles"></i> Start Matching/Registration
+            </button>
+          </div>
+        </div>
+        <div class="error-banner hidden" id="error-banner" role="alert"><i class="fa-solid fa-triangle-exclamation"></i><span id="error-text"></span></div>
+      </div>
+    </section>
+
+    <!-- Results (hidden until matching runs) -->
+    <div id="results" class="hidden">
+
+      <!-- Main output -->
+      <section class="panel">
+        <div class="panel-inner">
+          <div class="section-heading">
+            <h2>Image generated after matching</h2>
+          </div>
+          <div class="output-single">
+            <div class="view-tabs" id="view-tabs">
+              <button class="view-tab active" data-view="registered">Registered</button>
+              <button class="view-tab" data-view="overlay">Overlay</button>
+              <button class="view-tab" data-view="matches">Correspondences</button>
+            </div>
+            <div class="output-image output-image--wide">
+              <img id="output-img" alt="Registration output">
+            </div>
+            <div class="output-caption">
+              <span class="caption-badge"><i class="fa-solid fa-circle-check"></i> Image registration successful</span>
+              <button class="cta-secondary" id="download-result" type="button">
+                <i class="fa-solid fa-download"></i> Download
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Evaluation metrics -->
+      <section class="panel">
+        <div class="panel-inner">
+          <div class="section-heading"><h2>Evaluation metrics</h2></div>
+          <div class="metrics-layout">
+            <div class="stat-grid" id="stat-grid"></div>
+            <div class="heatmaps">
+              <div class="heatmap-box">
+                <div class="hm-label">Error heatmap (mean px error, 5×5 grid)</div>
+                <div id="error-heatmap"></div>
+              </div>
+              <div class="heatmap-box">
+                <div class="hm-label">Spatial uniformity (inlier locations)</div>
+                <div id="uniformity-plot"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- IIRS measurements -->
+      <section class="panel">
+        <div class="panel-inner">
+          <div class="section-heading"><h2>IIRS measurements</h2><span class="demo-badge">Demo data</span></div>
+          <ul class="iirs-list">
+            <li><i class="fa-solid fa-satellite-dish"></i> Raw sensor reflectance measurement</li>
+            <li><i class="fa-solid fa-chart-line"></i> Calibrated reflectance spectrum per pixel</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Wavelength - reflectance graph -->
+      <section class="panel">
+        <div class="panel-inner">
+          <div class="section-heading"><h2>Wavelength – reflectance graph</h2><span class="demo-badge">Demo data</span></div>
+          <div class="wave-layout">
+            <svg width="100%" height="220" viewBox="0 0 420 220">
+              <rect width="420" height="220" fill="#F7F3F1"/>
+              <line x1="40" y1="10" x2="40" y2="190" stroke="#C9C0B8"/>
+              <line x1="40" y1="190" x2="400" y2="190" stroke="#C9C0B8"/>
+              <polyline points="40,120 80,110 120,95 160,60 200,50 240,80 280,130 320,150 360,140 400,130"
+                fill="none" stroke="#3D4C7D" stroke-width="2.5"/>
+              <text x="220" y="210" text-anchor="middle" font-family="Space Mono, monospace" font-size="10" fill="#8A8D93">wavelength (nm)</text>
+              <text x="16" y="100" text-anchor="middle" font-family="Space Mono, monospace" font-size="10" fill="#8A8D93" transform="rotate(-90 16 100)">reflectance</text>
+            </svg>
+            <div>
+              <div class="band-grid">
+                <div class="band-card"><div class="band-value">1.56 µm</div><div class="band-label">Band centre</div></div>
+                <div class="band-card"><div class="band-value">0.18</div><div class="band-label">Band depth</div></div>
+                <div class="band-card"><div class="band-value">0.42 µm</div><div class="band-label">Band width</div></div>
+                <div class="band-card"><div class="band-value">0.031</div><div class="band-label">Band area</div></div>
+              </div>
+              <div class="minerals-line">Hence, the possible minerals could be :- <em>Pyroxene, Olivine</em> (placeholder)</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Landing suitability -->
+      <section class="panel">
+        <div class="panel-inner">
+          <div class="section-heading"><h2>Is this place suitable for rocket landing :-</h2><span class="demo-badge">Demo data</span></div>
+          <div class="landing-grid">
+            <div class="landing-card">
+              <h3>Safe landing score</h3>
+              <div class="score">8.2 / 10</div>
+              <p>Based on slope, boulder density, and surface roughness within the target ellipse.</p>
+            </div>
+            <div class="landing-card">
+              <h3>Mineral score</h3>
+              <div class="score">7.4 / 10</div>
+              <p>Reflects scientific value of the site based on detected mineral composition.</p>
+            </div>
+            <div class="landing-card feasibility">
+              <h3>Feasibility</h3>
+              <div class="verdict">Suitable, with caution</div>
+              <p>Terrain and mineral indicators both favour this site; final approach should avoid the boulder field to the south-east.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="#">Feedback</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+    <div class="footer-links">
+      <a href="#">Settings</a>
+    </div>
+  </footer>
+</div>
+
+
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
